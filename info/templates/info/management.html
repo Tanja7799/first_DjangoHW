@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Management</title>
+</head>
+<body>
+    <h1>Company Management</h1>
+    <ul>
+        {% for director in directors %}
+            <li>
+                <a href="{% url 'director_detail' director.id %}">{{ director.name }}</a> - {{ director.title }}
+            </li>
+        {% endfor %}
+    </ul>
+    <nav>
+        <a href="{% url 'home' %}">Home</a> |
+        <a href="{% url 'news' %}">News</a> |
+        <a href="{% url 'activities' %}">Activities</a> |
+        <a href="{% url 'contacts' %}">Contacts</a>
+    </nav>
+</body>
+</html>

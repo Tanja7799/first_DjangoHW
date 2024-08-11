@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to Our Company</h1>
+    <p>This is the homepage of our company website.</p>
+    <nav>
+        <a href="{% url 'news' %}">News</a> |
+        <a href="{% url 'management' %}">Management</a> |
+        <a href="{% url 'activities' %}">Activities</a> |
+        <a href="{% url 'contacts' %}">Contacts</a>
+    </nav>
+</body>
+</html>

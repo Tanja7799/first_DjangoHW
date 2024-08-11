@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ director.name }}</title>
+</head>
+<body>
+    <h1>{{ director.name }}</h1>
+    <p><strong>Title:</strong> {{ director.title }}</p>
+    <p><strong>Bio:</strong> {{ director.bio }}</p>
+    <nav>
+        <a href="{% url 'management' %}">Back to Management</a>
+    </nav>
+</body>
+</html>
